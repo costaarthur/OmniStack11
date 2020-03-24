@@ -1,4 +1,3 @@
-
 exports.up = function (knex) {
   return knex.schema.createTable('incidents', function (table) {
     table.increments();
@@ -14,5 +13,5 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-  return knex.sehcma.dropTable('incidents');
+  return knex.schema.dropTable('incidents');
 };
