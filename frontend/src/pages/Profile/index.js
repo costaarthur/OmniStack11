@@ -54,10 +54,15 @@ export default function Profile() {
     history.push('/')
   }
 
+  function goToBegin() {
+    history.push('/')
+  }
+
   return (
     <div className="profile-container">
       <header>
-        <img src={logoImg} alt="Be The Hero" />
+
+        <img src={logoImg} alt="Be The Hero" onClick={goToBegin} />
         <span>Bem vinda, {ongName}</span>
 
         <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
